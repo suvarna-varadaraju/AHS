@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintLeft_toRightOf="@+id/circle_line"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            app:fontFamily="@font/montserrat_semibold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018"
+            android:gravity="top"
+            android:layout_marginTop="64dp"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            app:fontFamily="@font/montserrat_semibold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            app:fontFamily="@font/montserrat_semibold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020"
+            android:layout_marginTop="66dp"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            app:fontFamily="@font/montserrat_semibold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            app:fontFamily="@font/montserrat_semibold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022"
+            android:layout_marginTop="66dp"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            app:fontFamily="@font/montserrat_semibold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/year7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023"
+            android:layout_marginTop="66dp"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            app:fontFamily="@font/montserrat_semibold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/circle_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.ahs.property.CircleImageView
+            android:id="@+id/cimage_one"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/ic_icon_background_blue"
+            android:elevation="8dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/lite_gold"/>
+
+        <com.ahs.property.CircleImageView
+            android:id="@+id/cimage_two"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_icon_background_blue"
+            android:elevation="8dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/lite_gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fl_three"
+            app:layout_constraintStart_toEndOf="@+id/fl_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ahs.property.CircleImageView
+            android:id="@+id/cimage_three"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_icon_background_blue"
+            android:elevation="8dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+
+        <View
+            android:id="@+id/view_three"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/lite_gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fl_three"
+            app:layout_constraintStart_toEndOf="@+id/fl_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ahs.property.CircleImageView
+            android:id="@+id/cimage_four"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_icon_background_blue"
+            android:elevation="8dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+
+        <View
+            android:id="@+id/view_four"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/lite_gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fl_three"
+            app:layout_constraintStart_toEndOf="@+id/fl_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ahs.property.CircleImageView
+            android:id="@+id/cimage_5"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_icon_background_blue"
+            android:elevation="8dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+
+        <View
+            android:id="@+id/view_5"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/lite_gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fl_three"
+            app:layout_constraintStart_toEndOf="@+id/fl_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ahs.property.CircleImageView
+            android:id="@+id/cimage_6"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_icon_background_blue"
+            android:elevation="8dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+
+        <View
+            android:id="@+id/view_6"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/lite_gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fl_three"
+            app:layout_constraintStart_toEndOf="@+id/fl_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ahs.property.CircleImageView
+            android:id="@+id/cimage_7"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_icon_background_blue"
+            android:elevation="8dp"
+            app:civ_border_color="@color/purple_500"
+            app:civ_border_overlay="true"
+            app:civ_border_width="4dp" />
+
+
+       <!-- <FrameLayout
+            android:id="@+id/fl_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/view_one"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.ahs.property.CircleImageView
+                android:id="@+id/cimage_one"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_icon_background_blue"
+                android:elevation="8dp"
+                app:civ_border_color="@color/purple_500"
+                app:civ_border_overlay="true"
+                app:civ_border_width="4dp" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/lite_gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fl_two"
+            app:layout_constraintEnd_toStartOf="@+id/fl_two"
+            app:layout_constraintStart_toEndOf="@+id/fl_one"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<FrameLayout
+            android:id="@+id/fl_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/view_two"
+            app:layout_constraintStart_toEndOf="@+id/view_one"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.ahs.property.CircleImageView
+                android:id="@+id/cimage_two"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_icon_background_blue"
+                android:elevation="8dp"
+                app:civ_border_color="@color/purple_500"
+                app:civ_border_overlay="true"
+                app:civ_border_width="4dp" />
+
+        </FrameLayout>-->
+
+
+
+      <!--  <FrameLayout
+            android:id="@+id/fl_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/view_three"
+            app:layout_constraintStart_toEndOf="@+id/view_two"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.ahs.property.CircleImageView
+                android:id="@+id/cimage_three"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_icon_background_blue"
+                android:elevation="8dp"
+                app:civ_border_color="@color/purple_500"
+                app:civ_border_overlay="true"
+                app:civ_border_width="4dp" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view_three"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/lite_gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fl_four"
+            app:layout_constraintStart_toEndOf="@+id/fl_three"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/fl_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_three"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.ahs.property.CircleImageView
+                android:id="@+id/cimage_four"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_icon_background_blue"
+                android:elevation="8dp"
+                app:civ_border_color="@color/purple_500"
+                app:civ_border_overlay="true"
+                app:civ_border_width="4dp" />
+
+        </FrameLayout>-->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

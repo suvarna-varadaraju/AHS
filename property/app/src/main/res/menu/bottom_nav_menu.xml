@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/navigation_home_selector"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_resident"
+        android:icon="@drawable/navigation_resi_selector"
+        android:title="Residents"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_villas"
+        android:icon="@drawable/navigation_vill_selector"
+        android:title="Villas"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/navigation_about_selector"
+        android:title="About"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_contact"
+        android:icon="@drawable/navigation_contact_selector"
+        android:title="Contact Us"
+        app:showAsAction="always"/>
+</menu>

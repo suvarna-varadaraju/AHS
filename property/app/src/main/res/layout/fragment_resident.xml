@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".property.resident.ResidentFragment">
+
+    <include
+        layout="@layout/activity_toolbar"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+               <!-- <VideoView
+                    android:id="@+id/bannerimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"/>
+-->
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:use_controller="false"
+                app:resize_mode="zoom" />
+                <!--<VideoView
+                    android:id="@+id/bannerimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout">
+
+                <RelativeLayout
+                    android:id="@+id/textcasa11"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/trans">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:alpha="0.6"
+                        android:src="@drawable/band">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:text="@string/projectheadercasa"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/lite_black"
+                        android:textSize="16dp"
+                        app:fontFamily="@font/montserrat_semibold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textcasa11"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:clipToPadding="false"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcasa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerview1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="4dp"
+                    android:text="@string/casa1"
+                    android:textColor="@color/lite_black"
+                    android:textSize="16dp"
+                    app:fontFamily="@font/montserrat_semibold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/learnmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerview1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle"
+                    android:padding="8dp"
+                    android:text="View Project"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/montserrat"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcasa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textcasa1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/casa2"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:fontFamily="@font/montserrat" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcasa3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textcasa2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/casa3"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:fontFamily="@font/montserrat" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcasa4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textcasa3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    android:text="@string/casa4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="sans-serif-light"/>
+
+                <View
+                    android:id="@+id/view_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textcasa4"
+                    android:background="@color/purple_500"/>
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/view_one"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/Widget.agriReach.CardView.outline"
+                        android:id="@+id/card1"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="1dp"
+                        app:strokeWidth="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clipToPadding="false"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textcanal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/recyclerview2"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="4dp"
+                                android:padding="4dp"
+                                android:textAlignment="textStart"
+                                android:text="@string/canal1"
+                                android:textColor="@color/lite_black"
+                                android:textSize="16dp"
+                                app:fontFamily="@font/montserrat_semibold" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textcanal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textcanal1"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginStart="8dp"
+                                android:textColor="@color/black"
+                                android:text="@string/canal2"
+                                android:textSize="12dp"
+                                app:fontFamily="@font/montserrat"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textcanal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textcanal2"
+                                android:textSize="12dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="@color/black"
+                                android:text="@string/canal3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:fontFamily="@font/montserrat"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textcanal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:visibility="gone"
+                                android:layout_below="@+id/textcanal3"
+                                android:text="@string/canal4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:fontFamily="@font/montserrat"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/learnmore1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/recyclerview2"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/rectangle"
+                                android:padding="8dp"
+                                android:text="View Project"
+                                android:textColor="@color/purple_500"
+                                android:textSize="14dp"
+                                app:fontFamily="@font/montserrat"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <View
+                        android:id="@+id/view_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/card1"
+                        android:background="@color/purple_500"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/Widget.agriReach.CardView.outline"
+                        android:id="@+id/card2"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="1dp"
+                        app:strokeWidth="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textcresent1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/recyclerview3"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:padding="4dp"
+                            android:textAlignment="textStart"
+                            android:text="@string/cresecent1"
+                            android:textColor="@color/lite_black"
+                            android:textSize="16dp"
+                            app:fontFamily="@font/montserrat_semibold"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textcresent2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textcresent1"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="@string/cresecent2"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            app:fontFamily="@font/montserrat" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textcresent3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_below="@+id/textcresent2"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="@string/cresecent3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:fontFamily="@font/montserrat"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textcresent4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:visibility="gone"
+                            android:layout_below="@+id/textcresent3"
+                            android:text="@string/cresecent4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:fontFamily="@font/montserrat"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/learnmore2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/recyclerview3"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/rectangle"
+                                android:padding="8dp"
+                                android:text="View Project"
+                                android:textColor="@color/purple_500"
+                                android:textSize="14dp"
+                                app:fontFamily="@font/montserrat"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+               <!-- <RelativeLayout
+                    android:id="@+id/lin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/recyclerview2">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/download1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="10dp"
+                        android:textSize="12dp"
+                        android:text="Download Brochure"
+                        app:textAllCaps="true" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/viewproject1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="12dp"
+                        android:layout_toRightOf="@+id/download1"
+                        android:text="view project"
+                        app:textAllCaps="true" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcanal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerview2"
+                    android:layout_margin="8dp"
+                    android:padding="4dp"
+                    android:text="@string/canal1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alef"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/learnmore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerview2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle"
+                    android:padding="8dp"
+                    android:text="Learn more"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/alef"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcanal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textcanal1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/canal2"
+                    android:textSize="16dp"
+                    app:fontFamily="sans-serif-light"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcanal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/textcanal2"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="@string/canal3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="sans-serif-light"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcanal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/textcanal3"
+                    android:text="@string/canal4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="sans-serif-light"/>
+
+                <View
+                    android:id="@+id/view_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textcanal4"
+                    android:background="@color/purple_500"/>-->
+
+             <!--   <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview3"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/view_one"
+                    android:layout_toEndOf="@+id/recyclerview2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcresent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerview3"
+                    android:layout_margin="8dp"
+                    android:padding="4dp"
+                    android:text="@string/cresecent1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/alef"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/learnmore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recyclerview3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rectangle"
+                    android:padding="8dp"
+                    android:text="Learn more"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/alef"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcresent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textcresent1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/cresecent2"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    app:fontFamily="sans-serif-light" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcresent3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/textcresent2"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="@string/cresecent3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="sans-serif-light"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textcresent4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/textcresent3"
+                    android:text="@string/cresecent4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="sans-serif-light"/>-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_logout"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/lin"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="8dp"
+                    android:elevation="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="24dp"
+                    android:text="Enquire Now"
+                    android:textColor="@color/white"
+                    app:textAllCaps="true"
+                    app:backgroundTint="@color/black"
+                    app:fontFamily="@font/montserrat_medium"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

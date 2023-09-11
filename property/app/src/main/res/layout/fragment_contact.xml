@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".home.ContactFragment">
+
+    <include
+        layout="@layout/activity_toolbar"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:use_controller="false"
+                app:resize_mode="zoom" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/lite_black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="@font/montserrat_semibold"
+                    android:text="PHONE"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_phone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="8dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="@font/montserrat"
+                    android:text="+971 44581821"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_phonenumber"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/lite_black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="@font/montserrat_semibold"
+                    android:text="EMAIL"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_emailus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="8dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="@font/montserrat"
+                    android:text="info@ahs-properties.com"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_emailus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/lite_black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:fontFamily="@font/montserrat_semibold"
+                    android:text="LOCATION"/>
+
+                <LinearLayout
+                    android:id="@+id/linsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/text_location"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/lin1"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/text_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:padding="2dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/lite_black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:fontFamily="@font/montserrat_semibold"
+                            android:text="CORPORATE OFFICE"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/text_locationus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_address"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginBottom="4dp"
+                            android:padding="6dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:fontFamily="@font/montserrat"
+                            android:text="Damac Executive Heights, 23rd floor Tecom, Dubai"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_divide"
+                        android:layout_width="0.5dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_500"/>
+
+                    <LinearLayout
+                        android:id="@+id/lin2"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/text_saleaddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:padding="2dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/lite_black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:fontFamily="@font/montserrat_semibold"
+                            android:text="SALES CENTRE"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/text_salelocationus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_address"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:padding="8dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:fontFamily="@font/montserrat"
+                            android:text="City Walk, Building 5, Unit 2, Happiness Street, Dubai"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/linsum"
+                    android:background="@color/purple_500"/>
+
+                <FrameLayout
+                    android:id="@+id/mapframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_one">
+                    <fragment
+                        android:id="@+id/mapview"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp"
+                        />
+                </FrameLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_contactus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mapframe"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="8dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/lite_black"
+                    app:fontFamily="@font/montserrat_semibold"
+                    android:text="Register with us"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/text_contactus"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Name *"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/black"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/montserrat"
+                        android:layout_below="@+id/text_contactus"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/text_name"
+                    app:fontFamily="@font/montserrat"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Email *"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/black"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/montserrat"
+                        android:layout_below="@+id/text_contactus"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/et_email"
+                    app:fontFamily="@font/montserrat"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:inputType="phone"
+                        app:fontFamily="@font/montserrat"
+                        android:hint="Phone *"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/black"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/text_contactus"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/et_phone"
+                    app:fontFamily="@font/montserrat"
+                    android:background="@drawable/rectangle1"
+                    android:padding="4dp"
+                    app:boxBackgroundMode="none">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Message"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColorHint="@color/black"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/montserrat"
+                        android:layout_below="@+id/text_contactus"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_sendmsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_message"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:text="SEND MESSAGE"
+                    android:textColor="@color/lite_black"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/montserrat_semibold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view_two"
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/text_sendmsg"
+                    android:background="@color/purple_500"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imag_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ph"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:layout_below="@+id/view_two"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imag_whatspp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wtsp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:layout_toRightOf="@+id/imag_call"
+                        android:layout_below="@+id/view_two"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imag_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ml"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:layout_toRightOf="@+id/imag_whatspp"
+                        android:layout_below="@+id/view_two"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/text_lettalk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imag_call"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:text="LET'S TALK"
+                    android:textColor="@color/lite_black"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/montserrat_semibold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view_three"
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/text_lettalk"
+                    android:background="@color/purple_500"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/social_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fb"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_below="@+id/view_three"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/social_inst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/insta"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="14dp"
+                    android:layout_toRightOf="@+id/social_f"
+                    android:paddingEnd="14dp"
+                    android:layout_below="@+id/view_three"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/social_youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/utb"
+                    android:layout_toRightOf="@+id/social_inst"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_below="@+id/view_three"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/social_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/link"
+                    android:layout_toRightOf="@+id/social_youtube"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_below="@+id/view_three"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/social_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/social_in"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp"
+                    android:text="SOCIAL LINKS"
+                    android:textColor="@color/lite_black"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/montserrat_semibold" />
+
+                <View
+                    android:id="@+id/view_four"
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/social_link"
+                    android:background="@color/purple_500"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
