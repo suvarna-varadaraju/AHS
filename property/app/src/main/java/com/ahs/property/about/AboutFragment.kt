@@ -2,10 +2,8 @@ package com.ahs.property.about
 
 import android.graphics.PixelFormat
 import android.graphics.Typeface
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import android.widget.MediaController
 import androidx.fragment.app.Fragment
 import com.ahs.property.R
 import com.ahs.property.databinding.FragmentAboutBinding
@@ -25,7 +23,7 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentAboutBinding.bind(view)
         binding.toolbar.aboutus.setText("About us")
-        requireActivity().getWindow().setFormat(PixelFormat.TRANSLUCENT);
+        requireActivity().getWindow().setFormat(PixelFormat.TRANSLUCENT)
         //binding.toolbar.incToolbarImage.setOnClickListener { requireActivity().onBackPressedDispatcher.onBackPressed() }
         binding.toolbar.incToolbarImage.setOnClickListener(View.OnClickListener { view ->
             onBackPressed()

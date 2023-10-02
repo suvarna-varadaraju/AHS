@@ -324,8 +324,8 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
                     intent.putExtra("url","casacanal_4bedroomskyvilla.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHAf")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHAf")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHA")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHA")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()

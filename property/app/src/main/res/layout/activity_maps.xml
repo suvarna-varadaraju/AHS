@@ -87,20 +87,22 @@ tools:context=".MapsActivity">
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:drawablePadding="8dp"
             android:elevation="4dp"
-            android:layout_margin="20dp"
-            android:layout_centerHorizontal="true"
             android:paddingVertical="10dp"
             android:paddingStart="16dp"
             android:paddingEnd="24dp"
             android:text="View on Map"
             android:textColor="@color/white"
-            app:textAllCaps="true"
-            app:backgroundTint="@color/black"/>
+            app:backgroundTint="@color/black"
+            app:textAllCaps="true" />
 
     </RelativeLayout>
 </RelativeLayout>

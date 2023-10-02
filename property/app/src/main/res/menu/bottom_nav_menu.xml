@@ -11,7 +11,7 @@
     <item
         android:id="@+id/menu_resident"
         android:icon="@drawable/navigation_resi_selector"
-        android:title="Residents"
+        android:title="Residences"
         app:showAsAction="always"/>
     <item
         android:id="@+id/menu_villas"

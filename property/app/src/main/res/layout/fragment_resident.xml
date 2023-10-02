@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 app:use_controller="false"
-                app:resize_mode="zoom" />
+                app:resize_mode="zoom"/>
                 <!--<VideoView
                     android:id="@+id/bannerimage"
                     android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                         android:textSize="16dp"
                         app:fontFamily="@font/montserrat_semibold"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                 </RelativeLayout>
 

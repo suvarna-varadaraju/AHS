@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:fillViewport="true">
 
-        <RelativeLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -26,6 +26,19 @@
                 app:use_controller="false"
                 app:resize_mode="zoom"/>
 
-        </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/animtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/purple_500"
+                android:textSize="16dp"
+                app:fontFamily="@font/montserrat"
+                android:text="Revolutionising Luxury Living">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+        </FrameLayout>
     </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

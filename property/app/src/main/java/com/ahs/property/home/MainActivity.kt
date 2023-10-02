@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var menuContact: View
     private lateinit var menuAbout: View
     private lateinit var viewPager: ViewPager
-
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

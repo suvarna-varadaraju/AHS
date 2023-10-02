@@ -39,7 +39,6 @@ import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
 import java.util.regex.Pattern
 
-
 class ContactFragment : Fragment(R.layout.fragment_contact), OnMapReadyCallback, GoogleMap.OnMapClickListener,
     GoogleMap.OnMarkerClickListener {
     private lateinit var binding: FragmentContactBinding

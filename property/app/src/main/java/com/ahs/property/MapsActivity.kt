@@ -26,7 +26,6 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
 
-
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.OnMapClickListener{
 
     private lateinit var mMap: GoogleMap

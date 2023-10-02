@@ -71,6 +71,5 @@ class Constatnt {
             }
             return working
         }
-
     }
 }

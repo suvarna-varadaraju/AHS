@@ -7,6 +7,7 @@ import android.content.IntentSender
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -29,6 +30,7 @@ import com.google.android.gms.location.LocationSettingsResponse
 import com.google.android.gms.location.SettingsClient
 import com.google.android.gms.tasks.Task
 
+
 class HomeFragment: Fragment(R.layout.fragment_home) {
     private lateinit var binding: FragmentHomeBinding
     private var player: ExoPlayer? = null
@@ -50,6 +52,9 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
             }
         }
         requestDeviceLocationSettings()
+
+        binding.animtext.startAnimation(AnimationUtils.loadAnimation(requireActivity(), R.anim.fadeinout))
+
         binding.apply {
             scroll.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
                 if (v.getChildAt(0).bottom <= scroll.getHeight() + scrollY) {
