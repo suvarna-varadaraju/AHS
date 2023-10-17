@@ -64,6 +64,7 @@
                         android:text="INSPIRING THROUGH INNOVATION AND GRANDEUR"
                         android:textAlignment="center"
                         android:textAllCaps="true"
+                        android:layout_centerInParent="true"
                         android:textColor="@color/lite_black"
                         android:textSize="16dp"
                         app:fontFamily="@font/montserrat_semibold"
