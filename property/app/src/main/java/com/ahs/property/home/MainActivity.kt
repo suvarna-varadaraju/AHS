@@ -1,7 +1,6 @@
 package com.ahs.property.home
 
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.Animation
@@ -10,12 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.ahs.property.R
-import com.ahs.property.ViewPagerAdapter
 import com.ahs.property.about.AboutFragment
 import com.ahs.property.databinding.ActivityMainBinding
 import com.ahs.property.property.resident.ResidentFragment
 import com.ahs.property.property.villas.villaFragment
-import kotlinx.android.synthetic.main.activity_main.bottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

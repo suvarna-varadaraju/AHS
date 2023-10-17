@@ -30,7 +30,6 @@ import com.google.android.gms.location.LocationSettingsResponse
 import com.google.android.gms.location.SettingsClient
 import com.google.android.gms.tasks.Task
 
-
 class HomeFragment: Fragment(R.layout.fragment_home) {
     private lateinit var binding: FragmentHomeBinding
     private var player: ExoPlayer? = null
@@ -55,7 +54,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
 
         binding.animtext.startAnimation(AnimationUtils.loadAnimation(requireActivity(), R.anim.fadeinout))
 
-        binding.apply {
+       /* binding.apply {
             scroll.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
                 if (v.getChildAt(0).bottom <= scroll.getHeight() + scrollY) {
                     loadFragment(ResidentFragment())
@@ -68,7 +67,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
             scroll.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
                 loadFragment(ResidentFragment())
             })
-        }
+        }*/
     }
 
     private fun loadFragment(fragment: Fragment) {
