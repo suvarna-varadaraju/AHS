@@ -140,5 +140,4 @@ class SplashScreen : AppCompatActivity() {
             .create()
             .show()
     }
-
 }
