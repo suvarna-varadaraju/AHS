@@ -9,6 +9,8 @@ plugins {
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
+
+
 android {
     namespace 'com.ahs.property'
     compileSdk 33
@@ -23,20 +25,20 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
+   /* signingConfigs {
         release {
             storeFile file("C:\\Users\\SuvarnaVaradaraju\\releasekey.keystore")
             storePassword "android"
             keyAlias "alias_name"
             keyPassword "android"
         }
-    }
+    }*/
 
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
