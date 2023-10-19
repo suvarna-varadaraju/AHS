@@ -6,6 +6,8 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
+import androidx.recyclerview.widget.SnapHelper
 import com.ahs.property.R
 import com.ahs.property.databinding.FragmentResidentBinding
 import com.ahs.property.home.ContactFragment
@@ -106,7 +108,9 @@ class ResidentFragment : Fragment(R.layout.fragment_resident),ResidentAdapter.On
 
         binding.recyclerview1.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             adapter = ResidentAdapter(createHeroList(), requireActivity(), this@ResidentFragment)
+            snapHelper.attachToRecyclerView(binding.recyclerview1)
             addItemDecoration(
                 CirclePagerIndicatorDecoration(
                     colorInactive = ContextCompat.getColor(context, R.color.black_alpha),
@@ -117,6 +121,7 @@ class ResidentFragment : Fragment(R.layout.fragment_resident),ResidentAdapter.On
 
         binding.recyclerview2.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             adapter = ResidentAdapter_onecanal(
                 createCanalList(),
                 requireActivity(),
@@ -128,10 +133,12 @@ class ResidentFragment : Fragment(R.layout.fragment_resident),ResidentAdapter.On
                     colorActive = ContextCompat.getColor(context, R.color.purple_500)
                 )
             )
+            snapHelper.attachToRecyclerView(binding.recyclerview2)
         }
 
         binding.recyclerview3.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             adapter = ResidentAdapter_cresent(
                 createCresecentList(),
                 requireActivity(),
@@ -143,6 +150,7 @@ class ResidentFragment : Fragment(R.layout.fragment_resident),ResidentAdapter.On
                     colorActive = ContextCompat.getColor(context, R.color.purple_500)
                 )
             )
+            snapHelper.attachToRecyclerView(binding.recyclerview3)
         }
     }
 

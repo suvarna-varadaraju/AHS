@@ -9,6 +9,8 @@ import android.widget.MediaController
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
+import androidx.recyclerview.widget.SnapHelper
 import com.ahs.property.R
 import com.ahs.property.databinding.FragmentVillaBinding
 import com.ahs.property.home.ContactFragment
@@ -98,7 +100,9 @@ class villaFragment : Fragment(R.layout.fragment_villa),VillaAdapter.OnItemClick
     private fun setupRecyclerView() {
         binding.recyclerview1.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             adapter = VillaAdapter(createAmaraList(),requireActivity(),this@villaFragment)
+            snapHelper.attachToRecyclerView(binding.recyclerview1);
             addItemDecoration(
                 CirclePagerIndicatorDecoration(
                     colorInactive = ContextCompat.getColor(context, R.color.black_alpha),
@@ -109,7 +113,9 @@ class villaFragment : Fragment(R.layout.fragment_villa),VillaAdapter.OnItemClick
 
         binding.recyclerview2.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             adapter = VillaAdapter1(createSerenityList(),requireActivity(),this@villaFragment)
+            snapHelper.attachToRecyclerView(binding.recyclerview2)
             addItemDecoration(
                 CirclePagerIndicatorDecoration(
                     colorInactive = ContextCompat.getColor(context, R.color.black_alpha),
@@ -121,34 +127,40 @@ class villaFragment : Fragment(R.layout.fragment_villa),VillaAdapter.OnItemClick
         binding.recyclerview3.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = VillaAdapter2(createSunRayList(),requireActivity(),this@villaFragment)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             addItemDecoration(
                 CirclePagerIndicatorDecoration(
                     colorInactive = ContextCompat.getColor(context, R.color.black_alpha),
                     colorActive = ContextCompat.getColor(context, R.color.purple_500)
                 )
             )
+            snapHelper.attachToRecyclerView(binding.recyclerview3)
         }
 
         binding.recyclerview31.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = VillaAdapter3(createAZALEAList(),requireActivity(),this@villaFragment)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             addItemDecoration(
                 CirclePagerIndicatorDecoration(
                     colorInactive = ContextCompat.getColor(context, R.color.black_alpha),
                     colorActive = ContextCompat.getColor(context, R.color.purple_500)
                 )
             )
+            snapHelper.attachToRecyclerView(binding.recyclerview31)
         }
 
         binding.recyclerview12.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = VillaAdapter4(createSERENEList(),requireActivity(),this@villaFragment)
+            val snapHelper: SnapHelper = PagerSnapHelper()
             addItemDecoration(
                 CirclePagerIndicatorDecoration(
                     colorInactive = ContextCompat.getColor(context, R.color.black_alpha),
                     colorActive = ContextCompat.getColor(context, R.color.purple_500)
                 )
             )
+            snapHelper.attachToRecyclerView(binding.recyclerview12)
         }
 
        /* binding.scroll.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->

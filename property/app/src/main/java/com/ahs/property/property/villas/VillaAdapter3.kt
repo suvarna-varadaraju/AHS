@@ -12,7 +12,6 @@ import com.ahs.property.databinding.ResidentItemBinding
 import com.ahs.property.property.Model.ResidentModel
 import com.ahs.property.property.resident.ResidentAdapter
 import kotlinx.android.synthetic.main.resident_item.view.image
-import kotlinx.android.synthetic.main.resident_item.view.logo
 
 class VillaAdapter3 (private val heroList: ArrayList<ResidentModel>, val context: Context,
                     private val listener: OnItemClickListener
@@ -26,14 +25,14 @@ class VillaAdapter3 (private val heroList: ArrayList<ResidentModel>, val context
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItem(heroList[position])
         if(position==(getItemCount()-1)){
-            holder.itemView.logo.visibility = View.GONE
+            //holder.itemView.logo.visibility = View.GONE
         }
 
-        holder.itemView.logo.setOnClickListener {
+      /*  holder.itemView.logo.setOnClickListener {
             listener.onItemClick(
                 position,4
             )
-        }
+        }*/
 
         holder.itemView.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ahs-properties.com/project/azalea/"))

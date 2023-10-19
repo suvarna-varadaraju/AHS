@@ -13,13 +13,7 @@ import com.ahs.property.R
 import com.ahs.property.databinding.ResidentItemBinding
 import com.ahs.property.property.Model.ResidentModel
 import com.google.android.exoplayer2.ExoPlayer
-import com.google.android.exoplayer2.MediaItem
-import com.google.android.exoplayer2.Player
-import com.google.android.exoplayer2.source.ProgressiveMediaSource
-import com.google.android.exoplayer2.upstream.DefaultDataSource
-import com.google.android.exoplayer2.util.MimeTypes
 import kotlinx.android.synthetic.main.resident_item.view.image
-import kotlinx.android.synthetic.main.resident_item.view.logo
 
 class ResidentAdapter_cresent (private val heroList: ArrayList<ResidentModel>, val context:Context,
                                private val listener_onecresecent: ResidentAdapter_onecanal.OnItemClickListener
@@ -37,14 +31,14 @@ class ResidentAdapter_cresent (private val heroList: ArrayList<ResidentModel>, v
         holder.itemView.image.startAnimation(animZoomIn1)
 
         if(position==(getItemCount()-1)){
-            holder.itemView.logo.visibility = View.GONE
+            //holder.itemView.logo.visibility = View.GONE
         }
 
-        holder.itemView.logo.setOnClickListener {
+       /* holder.itemView.logo.setOnClickListener {
             listener_onecresecent.onItemClick(
                 position,3
             )
-        }
+        }*/
 
         holder.itemView.setOnClickListener {
                 val browserIntent =

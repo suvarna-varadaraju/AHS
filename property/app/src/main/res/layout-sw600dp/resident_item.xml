@@ -3,51 +3,14 @@
 xmlns:app="http://schemas.android.com/apk/res-auto"
 style="@style/Widget.agriReach.CardView.elevation"
 android:layout_width="match_parent"
-android:layout_height="wrap_content"
+android:layout_height="800dp"
     android:background="@color/white">
-
-<androidx.appcompat.widget.LinearLayoutCompat
-    android:id="@+id/container"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/casacanal_1"
-            android:scaleType="fitCenter" />
+            android:layout_height="800dp"
+            android:src="@drawable/casacanal_4"
+            android:scaleType="centerCrop"/>
 
-        <!--<com.google.android.exoplayer2.ui.PlayerView
-            android:id="@+id/playerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:use_controller="false"
-            app:resize_mode="zoom" />-->
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_gravity="bottom|end"
-            android:id="@+id/logo"
-            android:visibility="gone"
-            android:src="@drawable/ic_forward48"/>
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:layout_gravity="bottom|start"
-                    android:id="@+id/logo1"
-                    android:visibility="gone"
-                    android:src="@drawable/ic_forward48"/>
-        </FrameLayout>
-
-</androidx.appcompat.widget.LinearLayoutCompat>
 </com.google.android.material.card.MaterialCardView>

@@ -29,8 +29,8 @@
 
             <com.google.android.exoplayer2.ui.PlayerView
                 android:id="@+id/playerView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
                 app:default_artwork="@color/white"
                 app:use_controller="false"
                 app:resize_mode="fixed_width"/>
@@ -76,7 +76,7 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/about1img"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="480dp"
                     android:layout_below="@+id/textcasa11"
                     android:scaleType="fitXY"
@@ -251,8 +251,8 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/about_histroy"
-                        android:layout_width="wrap_content"
-                        android:layout_height="480dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:scaleType="centerInside"
                         android:src="@drawable/history_2017"

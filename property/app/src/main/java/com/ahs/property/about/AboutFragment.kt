@@ -88,7 +88,7 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
 
         binding.progressIndicator.cimage7.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage7.setBackgroundResource(R.drawable.ic_icon_background_blue1)
-            binding.aboutHistroy.setImageResource(R.drawable.casacanal_1)
+            binding.aboutHistroy.setImageResource(R.drawable.casacanal_02)
             binding.progressIndicator.year7.setTypeface(binding.progressIndicator.year7.getTypeface(), Typeface.BOLD)
             binding.aboutusHistroyText.setText("In 2023, AHS Properties launched an extraordinary project called Casa Canal, marking a significant milestone in architectural innovation. This groundbreaking development combines cutting-edge design, sustainable technology, and unparalleled luxury. Situated alongside a serene canal, Casa Canal offers residents a harmonious blend of natural beauty and urban sophistication. The meticulously crafted residences boast spacious layouts, state-of-the-art amenities, and breathtaking views, providing an unmatched living experience.")
         })
@@ -149,7 +149,7 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
 
         binding.progressIndicator.year7.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage7.setBackgroundResource(R.drawable.ic_icon_background_blue1)
-            binding.aboutHistroy.setImageResource(R.drawable.casacanal_1)
+            binding.aboutHistroy.setImageResource(R.drawable.casacanal_02)
             binding.progressIndicator.year7.setTypeface(binding.progressIndicator.year7.getTypeface(), Typeface.BOLD)
             binding.aboutusHistroyText.setText("In 2023, AHS Properties launched an extraordinary project called Casa Canal, marking a significant milestone in architectural innovation. This groundbreaking development combines cutting-edge design, sustainable technology, and unparalleled luxury. Situated alongside a serene canal, Casa Canal offers residents a harmonious blend of natural beauty and urban sophistication. The meticulously crafted residences boast spacious layouts, state-of-the-art amenities, and breathtaking views, providing an unmatched living experience.")
         })

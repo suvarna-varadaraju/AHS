@@ -18,9 +18,6 @@ import com.ahs.property.R
 import com.ahs.property.databinding.ResidentItemBinding
 import com.ahs.property.property.Model.ResidentModel
 import com.google.android.exoplayer2.ExoPlayer
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.resident_item.view.image
-import kotlinx.android.synthetic.main.resident_item.view.logo
 
 class ResidentAdapter (private val heroList: ArrayList<ResidentModel>, val context:Context,
                        private val listener: OnItemClickListener
@@ -39,16 +36,16 @@ class ResidentAdapter (private val heroList: ArrayList<ResidentModel>, val conte
         holder.itemBinding.image.startAnimation(animZoomIn1)
 
         if(position==(getItemCount()-1)){
-            holder.itemView.logo.visibility = View.GONE
+            //holder.itemView.logo.visibility = View.GONE
         }
 
         //Picasso.get().load("https://docs.google.com/uc?id=15lRM1IberjKUvLqGTNX8oQWHUSdrRj4Q").into(holder.itemBinding.image)
 
-        holder.itemView.logo.setOnClickListener {
+        /*holder.itemView.logo.setOnClickListener {
             listener.onItemClick(
                 position,1
             )
-        }
+        }*/
 
         holder.itemView.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://casacanal.com/"))

@@ -13,7 +13,6 @@ import com.ahs.property.databinding.ResidentItemBinding
 import com.ahs.property.property.Model.ResidentModel
 import com.google.android.exoplayer2.ExoPlayer
 import kotlinx.android.synthetic.main.resident_item.view.image
-import kotlinx.android.synthetic.main.resident_item.view.logo
 
 class ResidentAdapter_onecanal (private val heroList: ArrayList<ResidentModel>, val context: Context,
                        private val listener_onecanal: OnItemClickListener
@@ -32,14 +31,16 @@ class ResidentAdapter_onecanal (private val heroList: ArrayList<ResidentModel>, 
         holder.itemView.image.startAnimation(animZoomIn1)
 
         if(position==(getItemCount()-1)){
-            holder.itemView.logo.visibility = View.GONE
+           // holder.itemView.logo.visibility = View.GONE
         }
 
+/*
         holder.itemView.logo.setOnClickListener {
             listener_onecanal.onItemClick(
                 position,2
             )
         }
+*/
 
         holder.itemView.setOnClickListener {
 
