@@ -113,11 +113,11 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/about2img"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="240dp"
                     android:layout_below="@+id/aboutus_full"
                     android:layout_marginTop="10dp"
-                    android:scaleType="centerInside"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/about_ahs"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -155,7 +155,7 @@
                     android:layout_height="240dp"
                     android:layout_below="@+id/aboutus_2des"
                     android:layout_marginTop="10dp"
-                    android:scaleType="centerInside"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/about_ash1"
                     app:layout_constraintTop_toTopOf="parent" />
 

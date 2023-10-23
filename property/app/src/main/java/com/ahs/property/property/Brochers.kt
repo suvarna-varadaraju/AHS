@@ -158,10 +158,11 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
         casaCanal = ArrayList()
         casaCanal.add("Project Brouchure")
         casaCanal.add("Fact Sheet")
-        casaCanal.add("3 Bedroom sky villa")
-        casaCanal.add("4 Bedroom sky villa")
-        casaCanal.add("5 Bedroom sky villa")
-        casaCanal.add("6 Bedroom sky villa mansion")
+        casaCanal.add("3 Bedroom Penthouse")
+        casaCanal.add("Garden Villa")
+        casaCanal.add("4 Bedroom Sky Villa")
+        casaCanal.add("5 Bedroom Penthouse")
+        casaCanal.add("6 Bedroom Sky Mansion")
         casaCanal.add("Location")
         casaCanal.add("Website")
     }
@@ -301,8 +302,8 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
                     intent.putExtra("url","casacanal_factsheet.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1oGXsanurgp6_MMiJtsb7E7qT8FT5rppX")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1oGXsanurgp6_MMiJtsb7E7qT8FT5rppX")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1Y9fsJVonUsUTUM1QguWotPhewo6_zrA0")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1Y9fsJVonUsUTUM1QguWotPhewo6_zrA0")
                     startActivity(intent)
                         startActivity(intent)
                     }else{
@@ -313,8 +314,8 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
                     intent.putExtra("url","casacanal_3bedroom.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1MAnKv8ASoKeVP6NtwttBB4eEe7c7hXb3")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1MAnKv8ASoKeVP6NtwttBB4eEe7c7hXb3")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1pzd_GqyrFA5DAJq_vGrmU4Wczw8kgLGX")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1pzd_GqyrFA5DAJq_vGrmU4Wczw8kgLGX")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
@@ -322,11 +323,11 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                 }
                 3 -> {
                     if(isNetworkAvailable(this)) {
-                    val intent = Intent(this@Brochers, PDFVIew::class.java)
-                    intent.putExtra("url","casacanal_4bedroomskyvilla.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHA")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHA")
-                    startActivity(intent)
+                        val intent = Intent(this@Brochers, PDFVIew::class.java)
+                        intent.putExtra("url","casacanal_4bedroomskyvilla.pdf")
+                        intent.putExtra("download","https://drive.google.com/uc?export=download&id=1UMCNH5fgdMZ2HGQVavFv47eLX3sP7jNv")
+                        intent.putExtra("view","https://drive.google.com/uc?export=view&id=1UMCNH5fgdMZ2HGQVavFv47eLX3sP7jNv")
+                        startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
                     }
@@ -334,9 +335,9 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                 4 -> {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
-                    intent.putExtra("url","casacanal_5bedroomskyvilla.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1ie3KMLMsxvcbtmZCw9D4mL2VxHqqbJtd")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1ie3KMLMsxvcbtmZCw9D4mL2VxHqqbJtd")
+                    intent.putExtra("url","casacanal_4bedroomskyvilla.pdf")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1TdHe0-jiB_VjSHv5Zxmt6NOPSlbykmiM")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1TdHe0-jiB_VjSHv5Zxmt6NOPSlbykmiM")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
@@ -345,15 +346,26 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                 5 -> {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
-                    intent.putExtra("url","casacanal_6bedroomskymansion.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1am1wjHuBopyHvr09hi_CXw19eqdV9N34")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1am1wjHuBopyHvr09hi_CXw19eqdV9N34")
+                    intent.putExtra("url","casacanal_5bedroomskyvilla.pdf")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1wm1YEBW6pKzXHgQqJkLOPnHDT0fGcMxE")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1wm1YEBW6pKzXHgQqJkLOPnHDT0fGcMxE")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
                     }
                 }
                 6 -> {
+                    if(isNetworkAvailable(this)) {
+                    val intent = Intent(this@Brochers, PDFVIew::class.java)
+                    intent.putExtra("url","casacanal_6bedroomskymansion.pdf")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1mPjgF_x0wxjnb3RKVR5UC-YuPRpBgWu8")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1mPjgF_x0wxjnb3RKVR5UC-YuPRpBgWu8")
+                    startActivity(intent)
+                    }else{
+                        Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                7 -> {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, MapsActivity::class.java)
                     intent.putExtra("type",projectType)
@@ -362,7 +374,7 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
                     }
                 }
-                7 -> {
+                8 -> {
                     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://casacanal.com/"))
                     startActivity(browserIntent)
                 }
@@ -374,8 +386,8 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
                     intent.putExtra("url","onecanal_brochure.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1qvwpS2ENyNaMTHA_dA4m6CdmP-MizEX0")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1qvwpS2ENyNaMTHA_dA4m6CdmP-MizEX0")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1HetQChhE6MvYFPDSVkc6c8_TKGyBFgMM")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1HetQChhE6MvYFPDSVkc6c8_TKGyBFgMM")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
@@ -385,8 +397,8 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
                     intent.putExtra("url","onecanal_factsheet.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=10Tn9zOic398Dw1Wpj-d4ToylDfK0Svn-")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=10Tn9zOic398Dw1Wpj-d4ToylDfK0Svn-")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=18ui_bdepPL34ivMxPyGDcMaxAoFJ9c9F")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=18ui_bdepPL34ivMxPyGDcMaxAoFJ9c9F")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
@@ -415,8 +427,8 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
                     intent.putExtra("url","onecrescent_brochure.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=11ySZcVsPIyGCQmqHAaDYtdtpvRCWz2K0")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=11ySZcVsPIyGCQmqHAaDYtdtpvRCWz2K0")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1Et8e9MgvhahQfx_xIqkQ2KaHmDy22iaH")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1Et8e9MgvhahQfx_xIqkQ2KaHmDy22iaH")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()
@@ -426,8 +438,8 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
                     if(isNetworkAvailable(this)) {
                     val intent = Intent(this@Brochers, PDFVIew::class.java)
                     intent.putExtra("url","factsheet_onecrescent.pdf")
-                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1_dYSmr0c8nfplPsQ_gHNR-eYipVeY4Bs")
-                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1_dYSmr0c8nfplPsQ_gHNR-eYipVeY4Bs")
+                    intent.putExtra("download","https://drive.google.com/uc?export=download&id=1apgv8_bSZYapyjWvH-6RfPoiB0mbEApI")
+                    intent.putExtra("view","https://drive.google.com/uc?export=view&id=1apgv8_bSZYapyjWvH-6RfPoiB0mbEApI")
                     startActivity(intent)
                     }else{
                         Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_SHORT).show()

@@ -47,7 +47,7 @@ class PDFVIew : AppCompatActivity() {
         backPress.visibility = View.VISIBLE
         downloadImage.visibility = View.VISIBLE
         val intent = getIntent()
-        pdfUrl = intent.getStringExtra("url").toString()
+        //pdfUrl = intent.getStringExtra("url").toString()
         titleName = intent.getBooleanExtra("name",false)
         downloadUrl = intent.getStringExtra("download").toString()
         viewUrl = intent.getStringExtra("view").toString()

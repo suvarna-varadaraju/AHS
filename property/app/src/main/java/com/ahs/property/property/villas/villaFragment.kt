@@ -106,7 +106,7 @@ class villaFragment : Fragment(R.layout.fragment_villa),VillaAdapter.OnItemClick
             addItemDecoration(
                 CirclePagerIndicatorDecoration(
                     colorInactive = ContextCompat.getColor(context, R.color.black_alpha),
-                    colorActive = ContextCompat.getColor(context, R.color.purple_500)
+                    colorActive = ContextCompat.getColor(context, R.color.purple_500),
                 )
             )
         }
