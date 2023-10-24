@@ -156,7 +156,7 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
 
     private fun initCasaCanalList() {
         casaCanal = ArrayList()
-        casaCanal.add("Project Brouchure")
+        casaCanal.add("Project Brochure")
         casaCanal.add("Fact Sheet")
         casaCanal.add("3 Bedroom Penthouse")
         casaCanal.add("Garden Villa")
@@ -169,14 +169,14 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
 
     private fun initAlzeaList() {
         alzea = ArrayList()
-        alzea.add("Project Brouchure")
+        alzea.add("Project Brochure")
         alzea.add("Location")
         alzea.add("Website")
     }
 
     private fun initOneCanalList() {
         oneCanal = ArrayList()
-        oneCanal.add("Project Brouchure")
+        oneCanal.add("Project Brochure")
         oneCanal.add("Fact Sheet")
         oneCanal.add("Location")
         oneCanal.add("Website")
@@ -184,7 +184,7 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
 
     private fun initOneCresecentList() {
         oneCresent = ArrayList()
-        oneCresent.add("Project Brouchure")
+        oneCresent.add("Project Brochure")
         oneCresent.add("Fact Sheet")
         oneCresent.add("6 Bedroom sky palace villa")
         oneCresent.add("Location")
@@ -193,37 +193,36 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
 
     private fun initSerenityList() {
         serinity = ArrayList()
-        serinity.add("Project Brouchure")
+        serinity.add("Project Brochure")
         serinity.add("Location")
         serinity.add("Website")
     }
 
     private fun initAmaraList() {
         amara = ArrayList()
-        amara.add("Project Brouchure")
+        amara.add("Project Brochure")
         amara.add("Location")
         amara.add("Website")
     }
 
     private fun initSereneList() {
         serene = ArrayList()
-        serene.add("Project Brouchure")
+        serene.add("Project Brochure")
         serene.add("Location")
         serene.add("Website")
     }
 
     private fun initSunraysList() {
         sunRays = ArrayList()
-        sunRays.add("Project Brouchure")
+        sunRays.add("Project Brochure")
         sunRays.add("Location")
         sunRays.add("Website")
     }
 
-
     /* binding.textcresentDownload.setOnClickListener(View.OnClickListener { view ->
          var download = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
          var PdfUri =
-             Uri.parse("https://ahs-properties.com/wp-content/uploads/2023/06/casa-canal-brouchure.pdf")
+             Uri.parse("https://ahs-properties.com/wp-content/uploads/2023/06/casa-canal-brochure.pdf")
          var getPdf = DownloadManager.Request(PdfUri)
          getPdf.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
          download.enqueue(getPdf)

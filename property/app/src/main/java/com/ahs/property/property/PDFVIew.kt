@@ -123,7 +123,6 @@ class PDFVIew : AppCompatActivity() {
         }
     }
 
-
 /*class RetrivePDFfromUrl : AsyncTask<String?, Void?, InputStream?>() {
         override fun onPostExecute(inputStream: InputStream?) {
             // after the execution of our async
