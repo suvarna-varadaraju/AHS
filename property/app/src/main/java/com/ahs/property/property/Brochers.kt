@@ -137,7 +137,6 @@ class Brochers : AppCompatActivity() , AdapterView.OnItemClickListener {
         }
         binding.textcasa11.setOnClickListener(handler)
         binding.toolbar.incToolbarImage.setOnClickListener { this@Brochers.onBackPressedDispatcher.onBackPressed() }
-
     }
 
     fun popupWindowDogs(projecttype:ArrayList<String>): PopupWindow? {

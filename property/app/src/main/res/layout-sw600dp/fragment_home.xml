@@ -38,8 +38,6 @@
                 android:textColor="@color/purple_500"
                 android:textSize="28dp"
                 app:fontFamily="@font/montserrat"
-                android:text="Revolutionising Luxury Living">
-
-            </androidx.appcompat.widget.AppCompatTextView>
+                android:text="Revolutionising Luxury Living"/>
         </FrameLayout>
 </RelativeLayout>

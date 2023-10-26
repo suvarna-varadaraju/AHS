@@ -125,7 +125,6 @@ class SplashScreen : AppCompatActivity() {
                 }
             }
         }
-
     }
 
     fun showToast(msg: String) {
