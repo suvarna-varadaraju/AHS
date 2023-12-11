@@ -158,6 +158,7 @@
                     android:layout_below="@+id/textcanal3"
                     app:fontFamily="@font/montserrat"
                     android:textSize="12dp"
+                    android:visibility="gone"
                     android:text="@string/sea4" />
 
                 <com.google.android.material.textview.MaterialTextView
@@ -266,6 +267,7 @@
                                 android:textSize="12dp"
                                 android:textColor="@color/black"
                                 app:fontFamily="@font/montserrat"
+                                android:visibility="gone"
                                 android:layout_below="@+id/textcasa3"
                                 android:text="@string/ama4"/>
 
@@ -401,6 +403,7 @@
                                 android:textColor="@color/black"
                                 android:layout_below="@+id/textcresent3"
                                 android:textSize="12dp"
+                                android:visibility="gone"
                                 app:fontFamily="@font/montserrat"
                                 android:text="@string/ama51"/>
 
@@ -531,6 +534,7 @@
                                 android:layout_marginBottom="4dp"
                                 android:textSize="12dp"
                                 android:textColor="@color/black"
+                                android:visibility="gone"
                                 app:fontFamily="@font/montserrat"
                                 android:layout_below="@+id/textcasa31"
                                 android:text="@string/aserene3"/>
@@ -672,6 +676,7 @@
                                 android:textColor="@color/black"
                                 android:layout_below="@+id/textcresent31"
                                 android:textSize="12dp"
+                                android:visibility="gone"
                                 app:fontFamily="@font/montserrat"
                                 android:text="@string/sene21"/>
 
@@ -706,7 +711,6 @@
                                 android:textColor="@color/purple_500"
                                 android:textSize="14dp"
                                 app:fontFamily="@font/montserrat"/>
-
                         </RelativeLayout>
                     </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>

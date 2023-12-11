@@ -27,6 +27,7 @@
             android:id="@+id/year2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="2018"
             android:gravity="top"
             android:layout_marginTop="64dp"
@@ -39,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2019"
+            android:visibility="gone"
             android:layout_marginTop="65dp"
             android:textColor="@color/purple_500"
             android:textSize="16dp"
@@ -49,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2020"
-            android:layout_marginTop="66dp"
+            android:layout_marginTop="65dp"
             android:textColor="@color/purple_500"
             android:textSize="16dp"
             app:fontFamily="@font/montserrat_semibold" />
@@ -59,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2021"
-            android:layout_marginTop="65dp"
+            android:layout_marginTop="62dp"
             android:textColor="@color/purple_500"
             android:textSize="16dp"
             app:fontFamily="@font/montserrat_semibold" />
@@ -69,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2022"
-            android:layout_marginTop="66dp"
+            android:layout_marginTop="62dp"
             android:textColor="@color/purple_500"
             android:textSize="16dp"
             app:fontFamily="@font/montserrat_semibold" />
@@ -79,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2023"
-            android:layout_marginTop="66dp"
+            android:layout_marginTop="62dp"
             android:textColor="@color/purple_500"
             android:textSize="16dp"
             app:fontFamily="@font/montserrat_semibold" />
@@ -118,6 +120,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/ic_icon_background_blue"
             android:elevation="8dp"
+            android:visibility="gone"
             app:civ_border_color="@color/purple_500"
             app:civ_border_overlay="true"
             app:civ_border_width="4dp" />
@@ -127,6 +130,7 @@
             android:layout_width="2dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
+            android:visibility="gone"
             android:background="@color/lite_gold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/fl_three"
@@ -140,6 +144,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/ic_icon_background_blue"
             android:elevation="8dp"
+            android:visibility="gone"
             app:civ_border_color="@color/purple_500"
             app:civ_border_overlay="true"
             app:civ_border_width="4dp" />
@@ -149,6 +154,7 @@
             android:layout_width="2dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
+            android:visibility="gone"
             android:background="@color/lite_gold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/fl_three"

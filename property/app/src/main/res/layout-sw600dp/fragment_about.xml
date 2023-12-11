@@ -241,7 +241,7 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/about_card"
                     style="@style/Widget.agriReach.CardView.elevation"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/aboutus_histroy_des"
                     android:layout_marginStart="16dp"
@@ -252,7 +252,7 @@
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/about_histroy"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="600dp"
                         android:layout_centerHorizontal="true"
                         android:scaleType="centerInside"
                         android:src="@drawable/history_2017"

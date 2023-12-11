@@ -184,16 +184,16 @@ class ResidentFragment : Fragment(R.layout.fragment_resident),ResidentAdapter.On
     private fun createHeroList(): ArrayList<ResidentModel> {
         return arrayListOf<ResidentModel>(
             ResidentModel(
-                R.drawable.casacanal_4
+                R.drawable.casacanal_12
             ),
             ResidentModel(
-                R.drawable.casacanal_1
+                R.drawable.casacanal_10
             ),
             ResidentModel(
-                R.drawable.casacanal_2
+                R.drawable.casacanal_11
             ),
             ResidentModel(
-                R.drawable.casacanal_5
+                R.drawable.casacanal_13
             )
         )
     }
@@ -201,16 +201,16 @@ class ResidentFragment : Fragment(R.layout.fragment_resident),ResidentAdapter.On
     private fun createCanalList(): ArrayList<ResidentModel> {
         return arrayListOf<ResidentModel>(
             ResidentModel(
-                R.drawable.onecanal_new1
+                R.drawable.onecanal_1
             ),
             ResidentModel(
-                R.drawable.onecanal_new2
+                R.drawable.onecanal_2
             ),
             ResidentModel(
-                R.drawable.onecanal_new3
+                R.drawable.onecanal_3
             ),
             ResidentModel(
-                R.drawable.onecanal_6
+                R.drawable.onecanal_7
             )
         )
     }
@@ -252,7 +252,7 @@ class ResidentFragment : Fragment(R.layout.fragment_resident),ResidentAdapter.On
         super.onResume()
         player?.stop()
         player?.release()
-        initializePlayer("android.resource://${requireActivity().packageName}/${R.raw.casacanal_5sec}")
+        initializePlayer("android.resource://${requireActivity().packageName}/${R.raw.casacanal}")
     }
 
     override fun onPause() {

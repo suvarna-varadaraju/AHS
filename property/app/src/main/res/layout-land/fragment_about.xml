@@ -183,7 +183,7 @@
                     android:layout_marginTop="5dp"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
-                    android:text="AHS Properties redefines luxury living, worth $1.5B. In a year, they achieved milestones: sold 3 Palm Jumeirah villas for $475M, launched another for $45M. Leading ultra-luxury with new projects at $700M in Dubai Water Canal, Palm Jumeirah. Sold 3 villas for $75M, GDP stays at $1.5B. Unveiled $45M Emirates Hills mansion, a new opulent era."
+                    android:text="AHS Properties has redefined luxury living with a gross development value of $1.65 billion. Within a year, they achieved remarkable milestones, including selling three villas in Palm Jumeirah for $75 million and launching another for $45 million. They now lead the future of ultra-luxury market with new projects in Dubai Water Canal and Palm Jumeirah, totaling a gross development value of over $1.65 billion."
                     android:textColor="@color/black"
                     android:textSize="14dp"
                     app:fontFamily="@font/montserrat" />

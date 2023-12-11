@@ -63,34 +63,41 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
             binding.progressIndicator.cimageFour.setBackgroundResource(R.drawable.ic_icon_background_blue1)
             binding.aboutHistroy.setImageResource(R.drawable.history_2020)
             binding.progressIndicator.year4.setTypeface(binding.progressIndicator.year4.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("AHS Investments was established in 2020 with a clear vision for creating long-term value through a diversified portfolio of private and public equity investments.\n\n" +
-                    "The company's unwavering commitment to sound investment principles and rigorous due diligence has enabled it to build an impressive asset base of over \$150 million.\n\n" +
-                    "AHS Investments is dedicated to identifying and supporting innovative companies and corporate entities that have the potential to transform industries and create meaningful change for society.\n")
+            binding.aboutusHistroyText.setText("AHS Investments was established in 2020 with a clear vision for creating long-term value with a focus on a diversified portfolio of private and public equity investments.\n\n" +
+                    "AHS Investments reached an impressive asset base of over \$150 million.\n\n" +
+                    "The company is dedicated to identifying and supporting innovative companies and corporate entities.\n\n" +
+                    "AHS Investments goal is to transform industries and create meaningful change for society.\n")
         })
 
         binding.progressIndicator.cimage5.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage5.setBackgroundResource(R.drawable.ic_icon_background_blue1)
             binding.aboutHistroy.setImageResource(R.drawable.history_2021)
             binding.progressIndicator.year5.setTypeface(binding.progressIndicator.year5.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("AHS Properties was founded with a bold ambition to create exceptional real estate developments that exceed expectations and enhance the lives of residents and communities.\n\n" +
-                    "The company's first projects, including 3 villas in Palm Jumeirah and 1 in Emirates Hills, set a high bar for quality, innovation, and design.\n\n" +
-                    "AHS Properties has quickly emerged as a leader in the industry, achieving numerous milestones and accolades in its first year of operation and inspiring others to pursue excellence and make a positive impact on the world.\n")
+            binding.aboutusHistroyText.setText("AHS Properties was founded in 2021 by Mr. Abbas Sajwani.\n\n" +
+                    "Focusing on exceptional real estate developments. First projects include 3 Villas in Palm Jumeirah and 1 Villa in Emirates Hills.\n\n" +
+                    "The company quickly emerged as a leader in the industry, setting high bar for quality, innovation, and design.\n\n" +
+                    "AHS Properties achieved numerous milestones and accolades in first year of operations.\n")
         })
 
         binding.progressIndicator.cimage6.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage6.setBackgroundResource(R.drawable.ic_icon_background_blue1)
             binding.aboutHistroy.setImageResource(R.drawable.historu_2022)
             binding.progressIndicator.year6.setTypeface(binding.progressIndicator.year6.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("AHS Properties sold three Palm villas for \$475 million.\n\n" +
+            binding.aboutusHistroyText.setText("AHS Properties sold three Palm villas for \$75 million.\n\n" +
                     "AHS launched a new ultra-luxury villa in Palm Jumeirah for \$45 million.\n\n" +
-                    "AHS announced two new projects in Dubai Water Canal and Palm Jumeirah, bringing the company's total gross development value to over \$550 million.")
+                    "AHS announced two new projects in Dubai Water Canal and Palm Jumeirah. \n\n"+
+                    "The company's Gross Development Value (GDV) has reached over \$1.5 billion.\n")
         })
 
         binding.progressIndicator.cimage7.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage7.setBackgroundResource(R.drawable.ic_icon_background_blue1)
-            binding.aboutHistroy.setImageResource(R.drawable.casacanal_02)
+            binding.aboutHistroy.setImageResource(R.drawable.casacanal_10)
             binding.progressIndicator.year7.setTypeface(binding.progressIndicator.year7.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("In 2023, AHS Properties launched an extraordinary project called Casa Canal, marking a significant milestone in architectural innovation. This groundbreaking development combines cutting-edge design, sustainable technology, and unparalleled luxury. Situated alongside a serene canal, Casa Canal offers residents a harmonious blend of natural beauty and urban sophistication. The meticulously crafted residences boast spacious layouts, state-of-the-art amenities, and breathtaking views, providing an unmatched living experience.")
+            binding.aboutusHistroyText.setText("AHS Properties launched Casa Canal in 2023, a groundbreaking architectural project.\n\n" +
+                    "Exclusive interiors by Fendi Casa.\n" +
+                    "AHS Properties continues to meticulously craft residences with spacious layouts and state-of-the-art amenities with breathtaking views to enhance the living experience for residents.\n\n" +
+                    "AHS Properties sells Dubai ultra-luxury penthouse for \$50m. \n\n" +
+                    "The company's Gross Development Value (GDV) has reached over \$1.65 billion.\n\n")
         })
 
         binding.progressIndicator.year1.setOnClickListener(View.OnClickListener { view ->
@@ -124,35 +131,42 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
             binding.progressIndicator.cimageFour.setBackgroundResource(R.drawable.ic_icon_background_blue1)
             binding.aboutHistroy.setImageResource(R.drawable.history_2020)
             binding.progressIndicator.year4.setTypeface(binding.progressIndicator.year4.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("AHS Investments was established in 2020 with a clear vision for creating long-term value through a diversified portfolio of private and public equity investments.\n\n" +
-                    "The company's unwavering commitment to sound investment principles and rigorous due diligence has enabled it to build an impressive asset base of over \$150 million.\n\n" +
-                    "AHS Investments is dedicated to identifying and supporting innovative companies and corporate entities that have the potential to transform industries and create meaningful change for society.\n")
+            binding.aboutusHistroyText.setText("AHS Investments was established in 2020 with a clear vision for creating long-term value with a focus on a diversified portfolio of private and public equity investments.\n\n" +
+                    "AHS Investments reached an impressive asset base of over \$150 million.\n\n" +
+                    "The company is dedicated to identifying and supporting innovative companies and corporate entities.\n\n" +
+                    "AHS Investments goal is to transform industries and create meaningful change for society.\n")
         })
 
         binding.progressIndicator.year5.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage5.setBackgroundResource(R.drawable.ic_icon_background_blue1)
             binding.aboutHistroy.setImageResource(R.drawable.history_2021)
             binding.progressIndicator.year5.setTypeface(binding.progressIndicator.year5.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("AHS Properties was founded with a bold ambition to create exceptional real estate developments that exceed expectations and enhance the lives of residents and communities.\n\n" +
-                    "The company's first projects, including 3 villas in Palm Jumeirah and 1 in Emirates Hills, set a high bar for quality, innovation, and design.\n\n" +
-                    "AHS Properties has quickly emerged as a leader in the industry, achieving numerous milestones and accolades in its first year of operation and inspiring others to pursue excellence and make a positive impact on the world.\n")
+            binding.aboutusHistroyText.setText("AHS Properties was founded in 2021 by Mr. Abbas Sajwani.\n\n" +
+                    "Focusing on exceptional real estate developments. First projects include 3 Villas in Palm Jumeirah and 1 Villa in Emirates Hills.\n\n" +
+                    "The company quickly emerged as a leader in the industry, setting high bar for quality, innovation, and design.\n\n" +
+                    "AHS Properties achieved numerous milestones and accolades in first year of operations.\n")
         })
 
         binding.progressIndicator.year6.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage6.setBackgroundResource(R.drawable.ic_icon_background_blue1)
             binding.aboutHistroy.setImageResource(R.drawable.historu_2022)
             binding.progressIndicator.year6.setTypeface(binding.progressIndicator.year6.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("AHS Properties sold three Palm villas for \$475 million.\n\n" +
+            binding.aboutusHistroyText.setText("AHS Properties sold three Palm villas for \$75 million.\n\n" +
                     "AHS launched a new ultra-luxury villa in Palm Jumeirah for \$45 million.\n\n" +
-                    "AHS announced two new projects in Dubai Water Canal and Palm Jumeirah, bringing the company's total gross development value to over \$550 million.")
+                    "AHS announced two new projects in Dubai Water Canal and Palm Jumeirah. \n\n"+
+                    "The company's Gross Development Value (GDV) has reached over \$1.5 billion.\n")
         })
 
         binding.progressIndicator.year7.setOnClickListener(View.OnClickListener { view ->
             binding.progressIndicator.cimage7.setBackgroundResource(R.drawable.ic_icon_background_blue1)
-            binding.aboutHistroy.setImageResource(R.drawable.casacanal_02)
+            binding.aboutHistroy.setImageResource(R.drawable.casacanal_12)
             binding.progressIndicator.year7.setTypeface(binding.progressIndicator.year7.getTypeface(), Typeface.BOLD)
-            binding.aboutusHistroyText.setText("In 2023, AHS Properties launched an extraordinary project called Casa Canal, marking a significant milestone in architectural innovation. This groundbreaking development combines cutting-edge design, sustainable technology, and unparalleled luxury. Situated alongside a serene canal, Casa Canal offers residents a harmonious blend of natural beauty and urban sophistication. The meticulously crafted residences boast spacious layouts, state-of-the-art amenities, and breathtaking views, providing an unmatched living experience.")
-        })
+            binding.aboutusHistroyText.setText("AHS Properties launched Casa Canal in 2023, a groundbreaking architectural project.\n\n" +
+                    "Exclusive interiors by Fendi Casa.\n" +
+                    "AHS Properties continues to meticulously craft residences with spacious layouts and state-of-the-art amenities with breathtaking views to enhance the living experience for residents.\n\n" +
+                    "AHS Properties sells Dubai ultra-luxury penthouse for \$50m. \n\n" +
+                    "The company's Gross Development Value (GDV) has reached over \$1.65 billion.\n\n")
+                    })
     }
 
     private fun insideTheard(){
@@ -227,7 +241,7 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
             Thread.sleep(18000)
             requireActivity().runOnUiThread(java.lang.Runnable {
                 binding.progressIndicator.cimage7.setBackgroundResource(R.drawable.ic_icon_background_blue1)
-                binding.aboutHistroy.setImageResource(R.drawable.casacanal_1)
+                binding.aboutHistroy.setImageResource(R.drawable.casacanal_10)
                 binding.progressIndicator.year7.setTypeface(binding.progressIndicator.year7.getTypeface(), Typeface.BOLD)
                 binding.aboutusHistroyText.setText("In 2023, AHS Properties launched an extraordinary project called Casa Canal, marking a significant milestone in architectural innovation. This groundbreaking development combines cutting-edge design, sustainable technology, and unparalleled luxury. Situated alongside a serene canal, Casa Canal offers residents a harmonious blend of natural beauty and urban sophistication. The meticulously crafted residences boast spacious layouts, state-of-the-art amenities, and breathtaking views, providing an unmatched living experience.")
             })
